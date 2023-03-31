@@ -1,0 +1,25 @@
+{
+    "git": {
+      "commitMessage": "chore: release v${version}"
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "conventionalcommits",
+        "infile": "CHANGELOG.md",
+        "context": {
+          "linkCompare": false
+        },
+        "gitRawCommitsOpts": {
+          "merges": null
+        }
+      }
+    },
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "skipChecks": true,
+      "publish": false
+    }
+  }
+  
